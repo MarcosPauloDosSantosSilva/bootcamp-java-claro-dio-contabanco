@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Conta {
     public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
         System.out.println("Ola Seja bem vindo ao MPbanco");
 
         String nome;
@@ -11,7 +12,6 @@ public class Conta {
         String conta;
         Double saldo;
 
-        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
         System.out.println("Favor digite seu nome: ");
         nome = sc.nextLine();
         System.out.println("Seu sobrenome: ");
